@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>PRODIGY Weather Application</title>
+  </head>
+  <body>
+    <div id="body">
+      <div class="main">
+        <div class="input">
+          <form id="search-form">
+            <input id="search-text" type="search" />
+            <button type="submit" id="search-button">Search</button>
+          </form>
+        </div>
+        <h2 id="loading-text">Loading...</h2>
+        <div class="details">
+          <h1 id="city"></h1>
+          <h2><span id="temperature"></span> &deg; C</h2>
+          <h2 class="weather">
+            <img id="weather-icon" /><span id="weather"></span>
+          </h2>
+          <div class="display-flex">
+            <p>Humidity: <span id="humidity"></span> %</p>
+            <p>Clouds: <span id="clouds"></span> %</p>
+          </div>
+          <div class="display-flex">
+            <p>Wind Speed: <span id="wind-speed"></span> m/s</p>
+            <p>Visibility: <span id="visibility"></span> Km</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
